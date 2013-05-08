@@ -31,32 +31,17 @@ Permalink: http://whatthecommit.com/0e0c1a4060a298158f3c4ef526f03f86
 Installation
 ------------
 
-### Using [Package Control](http://wbond.net/sublime_packages/package_control):
-
-* Click on **Preferences > Package Settings > Package Control > Settings - User**.
-* Edit and add the following key/value-pairs to that **json** file:
-
-```js
-{   
-    "package_name_map": {
-        "sublimetext-commitment": "Commitment"
-    },
-    "repositories": [
-        "https://github.com/janraasch/sublimetext-commitment"
-    ]
-}
-```
-
-* Bring up the **Command Palette** (`Command+Shift+P` on OS X, `Control+Shift+P` on Linux/Windows).
-* Select `Package Control: Install Package`.
-* Select `Commitment` to install.
-
-
 ### Not using Package Control:
    * Save files to the `Packages/Commitment` directory, then relaunch Sublime:
       * Linux: `~/.config/sublime-text-2/Packages/Commitment`
       * Mac: `~/Library/Application Support/Sublime Text 2/Packages/Commitment`
       * Windows: `%APPDATA%/Sublime Text 2/Packages/Commitment`
+
+### Using [Package Control](http://wbond.net/sublime_packages/package_control):
+**Wait for my [pull request](https://github.com/wbond/package_control_channel/pull/1332) to be accepted. Then...**
+* Bring up the **Command Palette** (`Command+Shift+P` on OS X, `Control+Shift+P` on Linux/Windows).
+* Select `Package Control: Install Package`.
+* Select `Commitment` to install.
 
 License
 ---------
