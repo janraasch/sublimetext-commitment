@@ -1,7 +1,7 @@
 sublimetext-commitment
 ======================
 
-Sublime Text 2 adoption of the great [Commitment](https://github.com/ngerakines/commitment) project.
+Sublime Text adoption of the great [Commitment](https://github.com/ngerakines/commitment) project.
 
 Hit `Command+Ctrl+L`,`Command+Ctrl+O`,`Command+Ctrl+L` on OS X, or `Alt+Shift+L` on Linux/Windows for a quick laugh.
 
