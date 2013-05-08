@@ -1,0 +1,10 @@
+[
+    {
+        "caption": "What the commit to clipboard",
+        "command": "commitment_to_clipboard"
+    },
+    {
+        "caption": "What the commit to status bar",
+        "command": "commitment_to_status_bar"
+    }
+]
