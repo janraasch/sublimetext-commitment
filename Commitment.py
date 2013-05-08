@@ -23,5 +23,5 @@ class CommitmentCommand(sublime_plugin.WindowCommand):
 
         if message:
             print('Commitment: ' + '\n' + message + '\n' + 'Permalink: ' + whatthecommit + message_hash)
-            sublime.set_clipboard(message.encode('utf-8'))
+            sublime.set_clipboard(message)
             sublime.status_message(message)

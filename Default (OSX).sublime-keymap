@@ -1,6 +1,6 @@
 [
     {
-        "keys": ["super+ctrl+l","super+ctrl+o","super+ctrl+l"],
+        "keys": ["super+shift+l","super+shift+o","super+shift+l"],
         "command": "commitment"
     }
 ]

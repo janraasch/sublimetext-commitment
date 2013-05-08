@@ -1,6 +1,6 @@
 [
     {
-        "keys": ["alt+shift+l"],
+        "keys": ["ctrl+shift+l","ctrl+shift+o","ctrl+shift+l"],
         "command": "commitment"
     }
 ]
