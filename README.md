@@ -3,14 +3,18 @@ sublimetext-commitment
 
 Sublime Text adoption of the great [Commitment](https://github.com/ngerakines/commitment) project.
 
-Hit `Command+Ctrl+L`,`Command+Ctrl+O`,`Command+Ctrl+L` on OS X, or `Alt+Shift+L` on Linux/Windows for a quick laugh.
+* **OS X**: Hit `Command+Shift+L`,`Command+Shift+O`,`Command+Shift+L`
+* **Linux** / **Windows**: Hit `Ctrl+Shift+L`,`Ctrl+Shift+O`,`Ctrl+Shift+L`
+
+for *a quick laugh*.
 
 *Visit [http://whatthecommit.com/](http://whatthecommit.com/) for the web version.*
 
 Usage
 -----
 * Type `What the commit` in the **Command Palette** (`Command+Shift+P` on OS X, `Control+Shift+P` on Linux/Windows).
-* Hit `Command+Ctrl+L`,`Command+Ctrl+O`,`Command+Ctrl+L` on OS X, or `Alt+Shift+L` on Linux/Windows.
+* **OS X**: Hit `Command+Shift+L`,`Command+Shift+O`,`Command+Shift+L`.
+* **Linux** / **Windows**: Hit `Ctrl+Shift+L`,`Ctrl+Shift+O`,`Ctrl+Shift+L`.
 
 You will see a random commit message printed to the status bar. The commit message is also added to your clipboard, so paste away.
 Define your own shortcuts through `Preferences > Package Settings > Commitment`.
