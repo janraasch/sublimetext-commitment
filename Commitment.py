@@ -2,14 +2,6 @@ import sublime
 import sublime_plugin
 import HTMLParser
 
-try:
-    # Python 3
-	from .commit import Commitment
-
-except (ValueError):
-	# Python 2
-	from commit import Commitment
-
 from commit import Commitment
 
 whatthecommit = 'http://whatthecommit.com/'
