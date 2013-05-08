@@ -14,13 +14,22 @@ messages_file = os.path.join(os.path.dirname(__file__), 'commit_messages.txt')
 messages = {}
 
 # Create a hash table of all commit messages
-for line in open(messages_file).readlines():
-    messages[md5(line).hexdigest()] = line
+try:
+    # Python 3
+    for line in open(messages_file, encoding='utf-8').readlines():
+        messages[md5(line.encode('utf-8')).hexdigest()] = line
+except (TypeError):
+    # Python 2
+    for line in open(messages_file).readlines():
+        messages[md5(line).hexdigest()] = line
+
+# Create list of hashes
+message_hashes = list(messages.keys())
 
 class Commitment:
     def get(self, message_hash=None):
         if not message_hash:
-            message_hash = random.choice(messages.keys())
+            message_hash = random.choice(message_hashes)
 
         message = messages[message_hash].replace('XNAMEX', random.choice(names))
 
