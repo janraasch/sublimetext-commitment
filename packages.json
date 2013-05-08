@@ -6,12 +6,12 @@
             "description": "What the commit.",
             "author": "Jan Raasch (jraasch)",
             "homepage": "https://github.com/janraasch/sublimetext-commitment",
-            "last_modified": "2013-05-08 17:15:00",
+            "last_modified": "2013-05-08 22:00:00",
             "platforms": {
                 "*": [
                     {
-                        "version": "0.1",
-                        "url": "https://nodeload.github.com/janraasch/sublimetext-commitment/zip/v0.1"
+                        "version": "1.0",
+                        "url": "https://nodeload.github.com/janraasch/sublimetext-commitment/zip/v1.0"
                     }
                 ]
             }
