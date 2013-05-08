@@ -11,6 +11,9 @@ Bring up the **Command Palette** (`Command+Shift+P` on OS X, `Control+Shift+P` o
   * type `What the commit to clipboard` or
   * type `What the commit to status bar`.
 
+Hit `Command+Ctrl+L`,`Command+Ctrl+O`,`Command+Ctrl+L` on OS X, or `Alt+Shift+L` on Linux/Windows and 
+instantly get a random commit printed to the status bar. Define your own shortcuts through `Preferences > Package Settings > Commitment`.
+
 Permalinks to the [web version](http://whatthecommit.com/) are printed to the console (`View > Show Console`) for you to share with your nerdy friends.
 ```
 Commitment:
