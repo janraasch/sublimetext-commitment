@@ -1,5 +1,6 @@
 import sublime
 import sublime_plugin
+import HTMLParser
 
 from commit import Commitment
 
@@ -9,19 +10,19 @@ randomMessages = Commitment()
 class CommitmentToClipboardCommand(sublime_plugin.WindowCommand):
     def run(self):
     	commit = randomMessages.get()
-    	message = commit.get('message', '')
+    	message = HTMLParser.HTMLParser().unescape(commit.get('message', '').replace('\n','').replace('<br/>', '\n'))
     	message_hash = commit.get('message_hash', '')
 
     	if message:
-    		print 'Commitment: ' + message + '\n' + 'Permalink: ' + whatthecommit + message_hash
+    		print 'Commitment: ' + '\n' + message + '\n' + 'Permalink: ' + whatthecommit + message_hash
         	sublime.set_clipboard(message)
 
 class CommitmentToStatusBarCommand(sublime_plugin.WindowCommand):
     def run(self):
     	commit = randomMessages.get()
-    	message = commit.get('message', '')
+    	message = HTMLParser.HTMLParser().unescape(commit.get('message', '').replace('\n','').replace('<br/>', '\n'))
     	message_hash = commit.get('message_hash', '')
 
     	if message:
-    		print 'Commitment: ' + message + '\n' + 'Permalink: ' + whatthecommit + message_hash
+    		print 'Commitment: ' + '\n' + message + '\n' + 'Permalink: ' + whatthecommit + message_hash
         	sublime.status_message(message)
