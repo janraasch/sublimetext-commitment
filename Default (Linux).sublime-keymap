@@ -1,6 +1,6 @@
 [
     {
         "keys": ["alt+shift+l"],
-        "command": "commitment_to_status_bar"
+        "command": "commitment"
     }
 ]

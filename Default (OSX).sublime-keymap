@@ -1,6 +1,6 @@
 [
     {
         "keys": ["super+ctrl+l","super+ctrl+o","super+ctrl+l"],
-        "command": "commitment_to_status_bar"
+        "command": "commitment"
     }
 ]

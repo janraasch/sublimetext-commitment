@@ -7,22 +7,13 @@ from commit import Commitment
 whatthecommit = 'http://whatthecommit.com/'
 randomMessages = Commitment()
 
-class CommitmentToClipboardCommand(sublime_plugin.WindowCommand):
+class CommitmentCommand(sublime_plugin.WindowCommand):
     def run(self):
-    	commit = randomMessages.get()
-    	message = HTMLParser.HTMLParser().unescape(commit.get('message', '').replace('\n','').replace('<br/>', '\n'))
-    	message_hash = commit.get('message_hash', '')
+        commit = randomMessages.get()
+        message = HTMLParser.HTMLParser().unescape(commit.get('message', '').replace('\n','').replace('<br/>', '\n'))
+        message_hash = commit.get('message_hash', '')
 
-    	if message:
-    		print 'Commitment: ' + '\n' + message + '\n' + 'Permalink: ' + whatthecommit + message_hash
-        	sublime.set_clipboard(message)
-
-class CommitmentToStatusBarCommand(sublime_plugin.WindowCommand):
-    def run(self):
-    	commit = randomMessages.get()
-    	message = HTMLParser.HTMLParser().unescape(commit.get('message', '').replace('\n','').replace('<br/>', '\n'))
-    	message_hash = commit.get('message_hash', '')
-
-    	if message:
-    		print 'Commitment: ' + '\n' + message + '\n' + 'Permalink: ' + whatthecommit + message_hash
-        	sublime.status_message(message)
+        if message:
+            print 'Commitment: ' + '\n' + message + '\n' + 'Permalink: ' + whatthecommit + message_hash
+            sublime.set_clipboard(message)
+            sublime.status_message(message)
