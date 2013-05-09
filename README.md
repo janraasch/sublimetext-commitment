@@ -43,7 +43,7 @@ Installation
 * Select `Package Control: Install Package`.
 * Select `Commitment` to install.
 
-*This also works with Sublime Text 3*
+*This also works with Sublime Text 3.*
 
 License
 ---------
