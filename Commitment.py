@@ -1,6 +1,8 @@
 import sublime
 import sublime_plugin
 
+from os import path
+
 try:
 	# Python 3
 	from .commit import RandomCommitment
@@ -31,15 +33,13 @@ if sublime.version() == '' or int(sublime.version()) > 3000:
     st_version = 3
 
 #
-# Build `messages` and `message_hashes`
+# Build `messages`
 # to be able to init an instance of `RandomCommitment`
 #
 
 # Sublime Text 2
 
 if st_version == 2:
-
-    from os import path
 
     messages_file = open(path.join(path.dirname(__file__), commitMessages))
 
@@ -53,13 +53,23 @@ if st_version == 2:
 def plugin_loaded():
 
         from zipfile import ZipFile
-
+        #
         # Is there an easier way to access files inside a .sublime-package file in Sublime Text 3?
+        #
 
-        messages_file = ZipFile(sublime.installed_packages_path() + '/Commitment.sublime-package').open(commitMessages)
+        # Find commitMessages file.
+        package_path = path.join(sublime.installed_packages_path(), 'Commitment.sublime-package')
 
-        for line in messages_file.readlines():
-            messages[md5(line).hexdigest()] = line.decode('utf-8')
+        if path.isfile(package_path):
+            # Sublime Text 3 preferred way.
+            messages_file = ZipFile(package_path).open(commitMessages)
+            for line in messages_file.readlines():
+                messages[md5(line).hexdigest()] = line.decode('utf-8')
+        else:
+            # Somebody unzipped this badass.
+            messages_file = open(path.join(path.dirname(__file__), commitMessages), encoding='utf-8')
+            for line in messages_file.readlines():
+                messages[md5(line.encode('utf-8')).hexdigest()] = line
 
         CommitmentCommand.randomMessages = RandomCommitment(messages)
 
