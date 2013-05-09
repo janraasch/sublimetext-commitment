@@ -4,7 +4,7 @@
         {
             "name": "Commitment",
             "description": "A commit message generator.",
-            "author": "Jan Raasch (jraasch)",
+            "author": "Jan Raasch (janraasch)",
             "homepage": "https://github.com/janraasch/sublimetext-commitment",
             "last_modified": "2013-05-09 16:45:00",
             "platforms": {
