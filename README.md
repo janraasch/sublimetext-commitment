@@ -32,18 +32,16 @@ Installation
 ------------
 *Works with Sublime Text 2 and 3.*
 
+### Using [Package Control](http://wbond.net/sublime_packages/package_control):
+* Bring up the **Command Palette** (`Command+Shift+P` on OS X, `Control+Shift+P` on Linux/Windows).
+* Select `Package Control: Install Package`.
+* Select `Commitment` to install.
 
 ### Not using Package Control:
 Save files to the `Packages/Commitment` directory, then relaunch Sublime:
   * Linux: `~/.config/sublime-text-2/Packages/Commitment`
   * Mac: `~/Library/Application Support/Sublime Text 2/Packages/Commitment`
   * Windows: `%APPDATA%/Sublime Text 2/Packages/Commitment`
-
-### Using [Package Control](http://wbond.net/sublime_packages/package_control):
-**Wait for my [pull request](https://github.com/wbond/package_control_channel/pull/1332) to be accepted. Then...**
-* Bring up the **Command Palette** (`Command+Shift+P` on OS X, `Control+Shift+P` on Linux/Windows).
-* Select `Package Control: Install Package`.
-* Select `Commitment` to install.
 
 License
 ---------
