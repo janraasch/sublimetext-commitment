@@ -6,12 +6,12 @@
             "description": "A commit message generator.",
             "author": "Jan Raasch (janraasch)",
             "homepage": "https://github.com/janraasch/sublimetext-commitment",
-            "last_modified": "2013-06-26 15:45:00",
+            "last_modified": "2013-08-12 20:39:00",
             "platforms": {
                 "*": [
                     {
-                        "version": "1.0.3",
-                        "url": "https://nodeload.github.com/janraasch/sublimetext-commitment/zip/v1.0.3"
+                        "version": "1.0.4",
+                        "url": "https://nodeload.github.com/janraasch/sublimetext-commitment/zip/v1.0.4"
                     }
                 ]
             }
