@@ -1,0 +1,13 @@
+Commitment
+===========
+
+OS X: Hit Cmd+Shift+L, Cmd+Shift+O, Cmd+Shift+L
+
+Linux / Windows: Hit Ctrl+Shift+L, Ctrl+Shift+O, Ctrl+Shift+L
+
+
+(\ /)
+(O.o)
+(> <) Bunny approves this message.
+
+Visit http://whatthecommit.com/ for the web version.
