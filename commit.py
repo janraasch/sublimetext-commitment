@@ -2,7 +2,7 @@ import random
 
 names = ['Nick', 'Steve', 'Andy', 'Qi', 'Fanny', 'Sarah', 'Cord', 'Todd',
     'Chris', 'Pasha', 'Gabe', 'Tony', 'Jason', 'Randal', 'Ali', 'Kim',
-    'Rainer', 'Guillaume']
+    'Rainer', 'Guillaume', 'Kelan', 'David', 'John', 'Stephen']
 
 class RandomCommitment:
     def __init__(self, messages):
