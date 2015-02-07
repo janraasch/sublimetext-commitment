@@ -1,3 +1,6 @@
+One does not simply merge into master
+Merging the merge
+Another bug bites the dust
 de-misunderestimating
 XUPPERNAMEX, WE WENT OVER THIS. EXPANDTAB.
 XUPPERNAMEX, WE WENT OVER THIS. C++ IO SUCKS.
@@ -374,3 +377,38 @@ pep8 fixer
 it is hump day _^_
 happy monday _ bleh _
 after of this commit remember do a git reset hard
+someday I gonna kill someone for this shit...
+magic, have no clue but it works
+I am sorry
+dirty hack, have a better idea ?
+Code was clean until manager requested to fuck it up
+ - Temporary commit.
+:(:(
+...
+GIT :/
+stopped caring 10 commits ago
+Testing in progress ;)
+Fixed Bug
+Fixed errors
+Push poorly written test can down the road another ten years
+commented out failing tests
+I'm human
+TODO: write meaningful commit message
+Pig
+SOAP is a piece of shit
+did everything
+project lead is allergic to changes...
+making this thing actually usable.
+LAST time, XNAMEX, /dev/urandom IS NOT a variable name generator...
+I was told to leave it alone, but I have this thing called OCD, you see
+Whatever will be, will be 8{
+It's 2015; why are we using ColdFusion?!
+#GrammarNazi
+Future self, please forgive me and don't hit me with the baseball bat again!
+Hide those navs, boi!
+Who knows...
+Who knows WTF?!
+I should get a raise for this.
+Done, to whoever merges this, good luck.
+Not one conflict, today was a good day.
+First Blood
