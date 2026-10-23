@@ -45,6 +45,6 @@ Save files to the `Packages/Commitment` directory, then relaunch Sublime:
 
 License
 ---------
-Copyright (c) 2020 [Jan Raasch](https://www.janraasch.com)
+Copyright (c) 2026 [Jan Raasch](https://www.janraasch.com)
 
 This project and its contents are open source under the MIT license.
