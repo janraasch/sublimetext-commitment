@@ -6,12 +6,13 @@ from os import path
 try:
 	# Python 3
 	from .commit import RandomCommitment
-	from html.parser import HTMLParser
+	from html import unescape
 
 except (ValueError):
 	# Python 2
 	from commit import RandomCommitment
 	from HTMLParser import HTMLParser
+	unescape = HTMLParser().unescape
 
 try:
     from hashlib import md5
@@ -26,7 +27,6 @@ whatthecommit = 'http://whatthecommit.com/'
 commitMessages = 'commit_messages.txt'
 messages = {}
 message_hashes = []
-htmlParser = HTMLParser()
 
 st_version = 2
 if sublime.version() == '' or int(sublime.version()) > 3000:
@@ -92,7 +92,7 @@ class CommitmentCommand(sublime_plugin.WindowCommand):
             # Sublime Text 2
             commit = randomMessages.get()
 
-        message = htmlParser.unescape(commit.get('message', '').replace('\n','').replace('<br/>', '\n'))
+        message = unescape(commit.get('message', '').replace('\n','').replace('<br/>', '\n'))
 
         message_hash = commit.get('message_hash', '')
 
