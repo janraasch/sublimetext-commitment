@@ -1,9 +1,12 @@
 import random
 import re
 
-names = ['Nick', 'Steve', 'Andy', 'Qi', 'Fanny', 'Sarah', 'Cord', 'Todd',
-    'Chris', 'Pasha', 'Gabe', 'Tony', 'Jason', 'Randal', 'Ali', 'Kim',
-    'Rainer', 'Guillaume', 'Kelan', 'David', 'John', 'Stephen']
+names = ['Ali', 'Andy', 'April', 'Brannon', 'Chris', 'Cord', 'Dan', 'Darren',
+    'David', 'Edy', 'Ethan', 'Fanny', 'Gabe', 'Ganesh', 'Greg', 'Guillaume',
+    'James', 'Jason', 'Jay', 'Jen', 'John', 'Kelan', 'Kim', 'Lauren', 'Marcus',
+    'Matt', 'Matthias', 'Mattie', 'Mike', 'Nate', 'Nick', 'Pasha', 'Patrick',
+    'Paul', 'Preston', 'Qi', 'Rachel', 'Rainer', 'Randal', 'Ryan', 'Sarah',
+    'Stephen', 'Steve', 'Steven', 'Sunakshi', 'Todd', 'Tom', 'Tony']
 
 num_re = re.compile(r'XNUM([0-9,]*)X')
 
