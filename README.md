@@ -30,7 +30,7 @@ Permalink: http://whatthecommit.com/0e0c1a4060a298158f3c4ef526f03f86
 
 Installation
 ------------
-*Works with Sublime Text 2 and 3.*
+*Works with Sublime Text 2, 3 and 4.*
 
 ### Using [Package Control](http://wbond.net/sublime_packages/package_control):
 * Bring up the **Command Palette** (`Command+Shift+P` on OS X, `Control+Shift+P` on Linux/Windows).
