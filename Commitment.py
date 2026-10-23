@@ -6,7 +6,12 @@ from os import path
 try:
 	# Python 3
 	from .commit import RandomCommitment
-	from html import unescape
+	try:
+		from html import unescape
+	except ImportError:
+		# Python 3.3 (no html.unescape)
+		from html.parser import HTMLParser
+		unescape = HTMLParser().unescape
 
 except (ValueError):
 	# Python 2
